@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#FFD15C" />
+  <meta name="description" content="أتعلم وألعب — تطبيق تعليمي تفاعلي للأطفال من عمر سنتين: الأرقام، الحروف، الحيوانات، الألوان، الأشكال، الكلمات، والألعاب التعليمية." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="أتعلم وألعب" />
+  <title>أتعلم وألعب</title>
+
+  <!-- PWA manifest (relative path for GitHub Pages compatibility) -->
+  <link rel="manifest" href="./manifest.json" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32.png" />
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Splash screen — shown until app.js calls hideSplash() -->
+  <div id="splash" class="splash" aria-hidden="true">
+    <div class="splash-inner">
+      <div class="splash-logo" aria-hidden="true">A</div>
+      <div class="splash-title">أتعلم وألعب</div>
+      <div class="splash-tagline">نتعلم ونلعب كل يوم</div>
+      <div class="splash-spinner" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- Top chrome: parent button + stars badge -->
+  <div id="chrome" class="chrome" aria-label="toolbar"></div>
+
+  <!-- App root — single container that components render into -->
+  <div id="app-root" class="app-root"></div>
+
+  <!-- =========================================================
+       Data files — loaded synchronously, no bundler needed.
+       Order matters: data first, then JS modules, then components.
+       ========================================================= -->
+  <script src="./data/arabic-letters.js"></script>
+  <script src="./data/english-letters.js"></script>
+  <script src="./data/arabic-numbers.js"></script>
+  <script src="./data/english-numbers.js"></script>
+  <script src="./data/animals.js"></script>
+  <script src="./data/colors.js"></script>
+  <script src="./data/shapes.js"></script>
+  <script src="./data/words.js"></script>
+  <script src="./data/games.js"></script>
+
+  <!-- Core JS modules -->
+  <script src="./js/storage.js"></script>
+  <script src="./js/i18n.js"></script>
+  <script src="./js/speech.js"></script>
+  <script src="./js/audio.js"></script>
+  <script src="./js/progress.js"></script>
+  <script src="./js/router.js"></script>
+  <script src="./js/games.js"></script>
+  <script src="./js/parent.js"></script>
+
+  <!-- View components -->
+  <script src="./components/home.js"></script>
+  <script src="./components/lesson.js"></script>
+  <script src="./components/quiz.js"></script>
+  <script src="./components/progress.js"></script>
+
+  <!-- App controller (must load last — it kicks off init on DOMContentLoaded) -->
+  <script src="./js/app.js"></script>
+</body>
+</html>

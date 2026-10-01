@@ -1,0 +1,61 @@
+{
+  "name": "أتعلم وألعب — Learn & Play",
+  "short_name": "أتعلم وألعب",
+  "description": "تطبيق تعليمي تفاعلي للأطفال من عمر سنتين: الأرقام، الحروف، الحيوانات، الألوان، الأشكال، والكلمات بألعاب تعليمية.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFD15C",
+  "theme_color": "#FFD15C",
+  "categories": ["education", "kids", "games"],
+  "icons": [
+    {
+      "src": "./assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./assets/icons/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "الأرقام",
+      "short_name": "Numbers",
+      "url": "./#/numbers/ar"
+    },
+    {
+      "name": "الحروف",
+      "short_name": "Letters",
+      "url": "./#/arabic-letters"
+    },
+    {
+      "name": "الحيوانات",
+      "short_name": "Animals",
+      "url": "./#/animals"
+    },
+    {
+      "name": "الألعاب",
+      "short_name": "Games",
+      "url": "./#/games"
+    }
+  ]
+}
